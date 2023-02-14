@@ -1,5 +1,6 @@
-import { describe, expect, it } from "vitest";
-import { render, fireEvent, getByDisplayValue } from "@testing-library/react";
+import React from "react";
+import { describe, it } from "vitest";
+import { render, fireEvent } from "@testing-library/react";
 import { Body } from "./Body";
 
 describe("Test component Body", () => {
@@ -18,6 +19,6 @@ describe("Test component Body", () => {
             }
         });
         
-        const newValueInput = getByDisplayValue("New value");
+        getByDisplayValue("New value");
     });
 });

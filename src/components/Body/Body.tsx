@@ -15,7 +15,7 @@ const Body = () => {
         temp.push(input);
         setMessages(temp);
         setInput("");
-    }
+    };
 
     const onKeyDwnHandler = (e: React.KeyboardEvent) =>{
         
@@ -24,7 +24,7 @@ const Body = () => {
 
         if(e.key === "Escape")
             setInput("");
-    }
+    };
 
     useEffect(() => {
         console.log("Component rendrering");        
