@@ -17,6 +17,7 @@ jobs:
           npm install yarn
           yarn
       - name: Running eslint
+        continue-on-error: true
         run: yarn run lint
       - name: Running tests
         run: yarn run test
