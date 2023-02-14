@@ -1,4 +1,4 @@
-name: GitHub Actions Demo PUSH
+name: GitHub Ci-CD Test Project
 run-name: ${{ github.actor }} is pushing 🚀
 on: [ push ]
 jobs:
@@ -15,4 +15,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: Running test
+      - run: npm install
+      - run: npm run test
       - run: echo "🍏 This job's status is ${{ job.status }}."
