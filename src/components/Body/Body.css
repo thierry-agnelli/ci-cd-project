@@ -1,0 +1,27 @@
+#bodyContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+}
+
+.input{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.messages{
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    border: 2px #174547;
+}
