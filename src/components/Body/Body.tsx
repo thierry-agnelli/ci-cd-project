@@ -13,7 +13,7 @@ const Body = () => {
     const onBtnClickHandler = () => {
         const temp =[...messages];
         temp.push(input);
-        setMessages(temp)
+        setMessages(temp);
         setInput("");
     };
 
