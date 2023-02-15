@@ -26,7 +26,8 @@
         "**/*.lock",
         "**/node_modules/",
         "**/public/*",
-        "**/dist"
+        "**/dist",
+        "Dockerfile"
     ],
     "rules": {
         "semi": ["error", "always"],
