@@ -25,7 +25,8 @@
         "**/*.css",
         "**/*.lock",
         "**/node_modules/",
-        "/public/*"
+        "**/public/*",
+        "**/dist"
     ],
     "rules": {
         "semi": ["error", "always"],

@@ -1,6 +1,8 @@
 name: GitHub Ci-CD Test Project
 run-name: ${{ github.actor }} Release app 🚀
-on: [ push ]
+on:
+  release:
+    types: [published]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
