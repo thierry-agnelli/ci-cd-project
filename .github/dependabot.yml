@@ -5,9 +5,9 @@
 
 version: 2.0
 updates:
-  - package-ecosystem: "jsdom" # See documentation for possible values
+  - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-      time: "10:40"
+      time: "10:50"
       timezone: "Europe/Paris"
