@@ -5,9 +5,9 @@
 
 version: 2.0
 updates:
-  - package-ecosystem: "yarn" # See documentation for possible values
+  - package-ecosystem: "jsdom" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-      time: "10:27"
+      time: "10:40"
       timezone: "Europe/Paris"
