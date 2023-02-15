@@ -1,0 +1,28 @@
+name: GitHub Ci-CD Test Project
+run-name: ${{ github.actor }} Release app 🚀
+on: [ push ]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: echo "Running install."
+      - name: Running install
+        run: |
+          cd front
+          npm install yarn
+          yarn
+      - run: echo "Building app" 
+      - name: Building app
+        run: |
+          cd front
+          yarn run build
+      - run: echo "Docker build"
+      - name: Docker build
+        run: |
+          cd front
+          docker build -t piepeline .
+      - run: echo "Run docker"
+      - name: Docker run
+        run: docker run pipeline
