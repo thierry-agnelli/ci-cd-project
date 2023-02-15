@@ -5,5 +5,5 @@
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true
   },
-  "include": ["vite.config.ts","vitest.config.ts"]
+  "include": ["front/vite.config.ts","front/vitest.config.ts"]
 }

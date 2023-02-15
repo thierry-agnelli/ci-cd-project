@@ -14,11 +14,16 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: Running install
         run: |
+          cd front
           npm install yarn
           yarn
       - name: Running eslint
         # continue-on-error: true
-        run: yarn run lint
+        run: |
+          cd front
+          yarn run lint
       - name: Running tests
-        run: yarn run test
+        run: |
+          cd front
+          yarn run test
       - run: echo "🍏 This job's status is ${{ job.status }}."
